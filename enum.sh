@@ -11,6 +11,7 @@ function questionnaire {
 	ipaddr+=($ipaddrInput)
 }
 
+#While loop to trigger the questionnaire function if there are more machines
 while true; do
 	read -p "Are there any more machines? [y/n]: " yn
 	case $yn in
