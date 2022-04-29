@@ -3,9 +3,10 @@
 declare -a machineName
 declare -a ipaddr
 
+#Asks the user to input the machine name and the IP address, appends to array
 function questionnaire {
-	read -p "Machine Name: " machineName
-	read -p "IP Address: " ipaddr
+	read -p "Machine Name: " machineNameInput
+	read -p "IP Address: " ipaddrInput
 	machineName+=($machineNameInput)
 	ipaddr+=($ipaddrInput)
 }
@@ -19,6 +20,7 @@ while true; do
 	esac
 done
 
+#Runs nmap scan individually
 set -- ${ipaddr[@]}
 for i in "${machineName[@]}"
 do
