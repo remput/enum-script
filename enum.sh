@@ -20,7 +20,7 @@ while true; do
 	esac
 done
 
-#Runs nmap scan individually
+#Runs nmap scan individually, creates a folder with the Machine Name and sends nmap output to (ip-address).log in that folder
 set -- ${ipaddr[@]}
 for i in "${machineName[@]}"
 do
