@@ -1,9 +1,8 @@
 # enum-script
 My enumeration script for generic scans of multiple specific IP addresses
 
-WARNING: Downloading this file from the website may cause some errors. Use dos2unix to solve it.
+WARNING: Downloading this file from the website may cause some errors. Use dos2unix to fix it.
 
-To fix,
 > dos2unix enum.sh
 
 To run it,
